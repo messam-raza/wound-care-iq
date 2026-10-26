@@ -1,0 +1,401 @@
+SourceSystem,Organisation,TeamOrFacility,NHSNumber,PatientName,Age,WoundType,WoundLocation,AssessmentDate,WoundArea_cm2,DaysOpen,InfectionStatus,Diabetes,PAD,PressureInjuryStage,ReviewOverdue
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100001,S1_Patient_001,81,Diabetic Foot Ulcer,Left Leg,2026-08-16,29.2,300,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100001,S1_Patient_001,86,Diabetic Foot Ulcer,Left Foot,2026-08-23,31.0,114,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100001,S1_Patient_001,71,Diabetic Foot Ulcer,Left Leg,2026-08-30,32.7,322,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100001,S1_Patient_001,56,Diabetic Foot Ulcer,Left Foot,2026-09-06,34.5,287,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100001,S1_Patient_001,94,Diabetic Foot Ulcer,Sacrum,2026-09-13,36.2,181,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100001,S1_Patient_001,82,Diabetic Foot Ulcer,Left Leg,2026-09-20,38.0,324,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100001,S1_Patient_001,55,Diabetic Foot Ulcer,Left Foot,2026-09-27,39.7,134,Suspected,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100001,S1_Patient_001,69,Diabetic Foot Ulcer,Sacrum,2026-10-04,41.5,331,Suspected,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100002,S1_Patient_002,67,Arterial Ulcer,Right Foot,2026-08-16,6.3,130,No,No,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100002,S1_Patient_002,62,Arterial Ulcer,Left Leg,2026-08-23,7.1,102,No,No,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100002,S1_Patient_002,73,Arterial Ulcer,Left Foot,2026-08-30,7.8,367,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100002,S1_Patient_002,51,Arterial Ulcer,Left Leg,2026-09-06,8.6,375,No,No,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100002,S1_Patient_002,66,Arterial Ulcer,Left Foot,2026-09-13,9.3,220,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100002,S1_Patient_002,73,Arterial Ulcer,Sacrum,2026-09-20,10.1,120,Yes,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100002,S1_Patient_002,83,Arterial Ulcer,Heel,2026-09-27,10.8,312,Yes,No,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100002,S1_Patient_002,93,Arterial Ulcer,Sacrum,2026-10-04,11.6,274,Yes,No,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100003,S1_Patient_003,55,Diabetic Foot Ulcer,Heel,2026-08-16,9.3,107,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100003,S1_Patient_003,79,Diabetic Foot Ulcer,Left Leg,2026-08-23,9.7,464,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100003,S1_Patient_003,75,Diabetic Foot Ulcer,Left Leg,2026-08-30,10.0,448,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100003,S1_Patient_003,82,Diabetic Foot Ulcer,Right Foot,2026-09-06,9.5,109,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100003,S1_Patient_003,71,Diabetic Foot Ulcer,Left Leg,2026-09-13,9.6,101,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100003,S1_Patient_003,57,Diabetic Foot Ulcer,Right Foot,2026-09-20,9.8,33,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100003,S1_Patient_003,72,Diabetic Foot Ulcer,Right Foot,2026-09-27,9.9,126,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100003,S1_Patient_003,71,Diabetic Foot Ulcer,Right Foot,2026-10-04,9.8,345,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100004,S1_Patient_004,88,Venous Leg Ulcer,Left Leg,2026-08-16,13.5,163,No,No,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100004,S1_Patient_004,85,Venous Leg Ulcer,Left Leg,2026-08-23,14.3,130,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100004,S1_Patient_004,93,Venous Leg Ulcer,Heel,2026-08-30,15.1,498,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100004,S1_Patient_004,51,Venous Leg Ulcer,Sacrum,2026-09-06,15.9,104,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100004,S1_Patient_004,53,Venous Leg Ulcer,Sacrum,2026-09-13,16.7,349,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100004,S1_Patient_004,67,Venous Leg Ulcer,Left Leg,2026-09-20,17.6,188,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100004,S1_Patient_004,71,Venous Leg Ulcer,Sacrum,2026-09-27,18.4,415,Suspected,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100004,S1_Patient_004,73,Venous Leg Ulcer,Left Leg,2026-10-04,19.2,265,Suspected,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100005,S1_Patient_005,94,Arterial Ulcer,Right Foot,2026-08-16,10.0,79,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100005,S1_Patient_005,54,Arterial Ulcer,Right Leg,2026-08-23,9.4,329,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100005,S1_Patient_005,81,Arterial Ulcer,Heel,2026-08-30,8.8,38,No,No,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100005,S1_Patient_005,62,Arterial Ulcer,Heel,2026-09-06,8.2,290,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100005,S1_Patient_005,94,Arterial Ulcer,Left Foot,2026-09-13,7.6,480,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100005,S1_Patient_005,67,Arterial Ulcer,Heel,2026-09-20,7.0,230,No,No,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100005,S1_Patient_005,65,Arterial Ulcer,Heel,2026-09-27,6.4,408,No,No,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100005,S1_Patient_005,80,Arterial Ulcer,Left Foot,2026-10-04,5.8,51,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100006,S1_Patient_006,67,Pressure Injury,Heel,2026-08-16,7.1,126,No,Yes,No,1,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100006,S1_Patient_006,81,Pressure Injury,Right Leg,2026-08-23,6.7,68,No,No,No,1,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100006,S1_Patient_006,84,Pressure Injury,Left Foot,2026-08-30,6.2,350,No,Yes,No,1,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100006,S1_Patient_006,78,Pressure Injury,Left Foot,2026-09-06,5.8,332,No,Yes,No,2,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100006,S1_Patient_006,59,Pressure Injury,Right Foot,2026-09-13,5.4,130,No,No,No,2,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100006,S1_Patient_006,61,Pressure Injury,Right Foot,2026-09-20,5.0,469,No,No,No,2,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100006,S1_Patient_006,52,Pressure Injury,Sacrum,2026-09-27,4.5,410,No,No,No,2,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100006,S1_Patient_006,87,Pressure Injury,Left Leg,2026-10-04,4.1,435,No,Yes,No,2,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100007,S1_Patient_007,89,Arterial Ulcer,Sacrum,2026-08-16,21.1,477,No,No,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100007,S1_Patient_007,79,Arterial Ulcer,Right Leg,2026-08-23,22.4,428,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100007,S1_Patient_007,56,Arterial Ulcer,Heel,2026-08-30,23.6,182,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100007,S1_Patient_007,59,Arterial Ulcer,Sacrum,2026-09-06,24.9,482,No,No,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100007,S1_Patient_007,76,Arterial Ulcer,Heel,2026-09-13,26.2,265,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100007,S1_Patient_007,90,Arterial Ulcer,Right Leg,2026-09-20,27.4,114,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100007,S1_Patient_007,60,Arterial Ulcer,Left Leg,2026-09-27,28.7,36,Suspected,No,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100007,S1_Patient_007,84,Arterial Ulcer,Left Leg,2026-10-04,30.0,381,Suspected,No,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100008,S1_Patient_008,53,Arterial Ulcer,Sacrum,2026-08-16,22.5,373,No,No,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100008,S1_Patient_008,95,Arterial Ulcer,Sacrum,2026-08-23,21.1,432,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100008,S1_Patient_008,96,Arterial Ulcer,Right Leg,2026-08-30,19.8,191,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100008,S1_Patient_008,55,Arterial Ulcer,Right Leg,2026-09-06,18.5,452,No,No,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100008,S1_Patient_008,91,Arterial Ulcer,Left Foot,2026-09-13,17.1,50,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100008,S1_Patient_008,54,Arterial Ulcer,Heel,2026-09-20,15.7,64,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100008,S1_Patient_008,74,Arterial Ulcer,Right Leg,2026-09-27,14.4,205,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100008,S1_Patient_008,94,Arterial Ulcer,Sacrum,2026-10-04,13.1,301,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100009,S1_Patient_009,90,Diabetic Foot Ulcer,Heel,2026-08-16,17.0,165,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100009,S1_Patient_009,75,Diabetic Foot Ulcer,Heel,2026-08-23,18.0,402,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100009,S1_Patient_009,50,Diabetic Foot Ulcer,Left Leg,2026-08-30,19.0,168,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100009,S1_Patient_009,65,Diabetic Foot Ulcer,Left Foot,2026-09-06,20.1,420,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100009,S1_Patient_009,56,Diabetic Foot Ulcer,Heel,2026-09-13,21.1,458,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100009,S1_Patient_009,86,Diabetic Foot Ulcer,Heel,2026-09-20,22.1,151,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100009,S1_Patient_009,50,Diabetic Foot Ulcer,Left Leg,2026-09-27,23.1,387,Suspected,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100009,S1_Patient_009,68,Diabetic Foot Ulcer,Right Leg,2026-10-04,24.1,433,Suspected,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100010,S1_Patient_010,78,Diabetic Foot Ulcer,Sacrum,2026-08-16,12.5,212,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100010,S1_Patient_010,59,Diabetic Foot Ulcer,Left Foot,2026-08-23,14.0,348,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100010,S1_Patient_010,91,Diabetic Foot Ulcer,Right Leg,2026-08-30,15.5,374,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100010,S1_Patient_010,57,Diabetic Foot Ulcer,Left Foot,2026-09-06,17.0,437,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100010,S1_Patient_010,81,Diabetic Foot Ulcer,Sacrum,2026-09-13,18.5,230,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100010,S1_Patient_010,92,Diabetic Foot Ulcer,Left Foot,2026-09-20,20.0,87,Yes,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100010,S1_Patient_010,79,Diabetic Foot Ulcer,Right Leg,2026-09-27,21.5,156,Yes,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100010,S1_Patient_010,85,Diabetic Foot Ulcer,Right Foot,2026-10-04,23.0,292,Yes,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100011,S1_Patient_011,53,Venous Leg Ulcer,Heel,2026-08-16,5.6,392,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100011,S1_Patient_011,95,Venous Leg Ulcer,Left Leg,2026-08-23,6.3,310,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100011,S1_Patient_011,94,Venous Leg Ulcer,Left Foot,2026-08-30,6.9,343,No,No,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100011,S1_Patient_011,90,Venous Leg Ulcer,Heel,2026-09-06,7.6,174,No,No,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100011,S1_Patient_011,78,Venous Leg Ulcer,Heel,2026-09-13,8.3,481,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100011,S1_Patient_011,52,Venous Leg Ulcer,Right Leg,2026-09-20,9.0,187,Yes,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100011,S1_Patient_011,96,Venous Leg Ulcer,Right Foot,2026-09-27,9.6,284,Yes,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100011,S1_Patient_011,72,Venous Leg Ulcer,Sacrum,2026-10-04,10.3,60,Yes,No,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100012,S1_Patient_012,90,Diabetic Foot Ulcer,Left Leg,2026-08-16,16.2,222,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100012,S1_Patient_012,93,Diabetic Foot Ulcer,Left Leg,2026-08-23,18.1,159,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100012,S1_Patient_012,59,Diabetic Foot Ulcer,Right Foot,2026-08-30,20.1,272,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100012,S1_Patient_012,74,Diabetic Foot Ulcer,Left Foot,2026-09-06,22.0,480,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100012,S1_Patient_012,75,Diabetic Foot Ulcer,Right Foot,2026-09-13,24.0,482,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100012,S1_Patient_012,65,Diabetic Foot Ulcer,Heel,2026-09-20,25.9,44,Yes,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100012,S1_Patient_012,85,Diabetic Foot Ulcer,Left Leg,2026-09-27,27.9,409,Yes,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100012,S1_Patient_012,79,Diabetic Foot Ulcer,Left Foot,2026-10-04,29.8,172,Yes,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100013,S1_Patient_013,59,Arterial Ulcer,Heel,2026-08-16,20.8,120,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100013,S1_Patient_013,79,Arterial Ulcer,Right Foot,2026-08-23,21.1,212,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100013,S1_Patient_013,94,Arterial Ulcer,Right Foot,2026-08-30,20.9,173,No,No,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100013,S1_Patient_013,89,Arterial Ulcer,Right Foot,2026-09-06,21.3,304,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100013,S1_Patient_013,63,Arterial Ulcer,Sacrum,2026-09-13,19.8,407,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100013,S1_Patient_013,54,Arterial Ulcer,Sacrum,2026-09-20,20.8,68,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100013,S1_Patient_013,87,Arterial Ulcer,Right Foot,2026-09-27,21.3,362,No,No,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100013,S1_Patient_013,69,Arterial Ulcer,Right Leg,2026-10-04,20.2,67,No,No,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100014,S1_Patient_014,83,Venous Leg Ulcer,Right Foot,2026-08-16,18.0,107,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100014,S1_Patient_014,79,Venous Leg Ulcer,Sacrum,2026-08-23,20.2,356,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100014,S1_Patient_014,62,Venous Leg Ulcer,Left Leg,2026-08-30,22.3,468,No,No,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100014,S1_Patient_014,77,Venous Leg Ulcer,Left Leg,2026-09-06,24.5,83,No,No,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100014,S1_Patient_014,65,Venous Leg Ulcer,Right Foot,2026-09-13,26.6,322,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100014,S1_Patient_014,81,Venous Leg Ulcer,Sacrum,2026-09-20,28.8,363,Yes,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100014,S1_Patient_014,64,Venous Leg Ulcer,Heel,2026-09-27,31.0,449,Yes,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100014,S1_Patient_014,50,Venous Leg Ulcer,Left Foot,2026-10-04,33.1,254,Yes,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100015,S1_Patient_015,85,Diabetic Foot Ulcer,Heel,2026-08-16,14.8,243,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100015,S1_Patient_015,93,Diabetic Foot Ulcer,Heel,2026-08-23,15.7,63,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100015,S1_Patient_015,93,Diabetic Foot Ulcer,Heel,2026-08-30,16.6,291,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100015,S1_Patient_015,94,Diabetic Foot Ulcer,Left Leg,2026-09-06,17.5,422,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100015,S1_Patient_015,80,Diabetic Foot Ulcer,Right Foot,2026-09-13,18.4,322,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100015,S1_Patient_015,83,Diabetic Foot Ulcer,Left Foot,2026-09-20,19.2,372,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100015,S1_Patient_015,97,Diabetic Foot Ulcer,Left Leg,2026-09-27,20.1,383,Suspected,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100015,S1_Patient_015,82,Diabetic Foot Ulcer,Left Leg,2026-10-04,21.0,68,Suspected,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100016,S1_Patient_016,52,Venous Leg Ulcer,Heel,2026-08-16,10.5,100,No,No,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100016,S1_Patient_016,85,Venous Leg Ulcer,Left Leg,2026-08-23,11.8,359,No,No,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100016,S1_Patient_016,86,Venous Leg Ulcer,Left Foot,2026-08-30,13.0,440,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100016,S1_Patient_016,66,Venous Leg Ulcer,Right Foot,2026-09-06,14.3,224,No,No,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100016,S1_Patient_016,61,Venous Leg Ulcer,Right Leg,2026-09-13,15.5,469,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100016,S1_Patient_016,85,Venous Leg Ulcer,Left Foot,2026-09-20,16.8,94,Yes,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100016,S1_Patient_016,91,Venous Leg Ulcer,Heel,2026-09-27,18.1,407,Yes,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100016,S1_Patient_016,50,Venous Leg Ulcer,Right Foot,2026-10-04,19.3,419,Yes,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100017,S1_Patient_017,57,Pressure Injury,Sacrum,2026-08-16,27.5,325,No,Yes,No,1,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100017,S1_Patient_017,88,Pressure Injury,Left Leg,2026-08-23,25.8,258,No,No,No,1,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100017,S1_Patient_017,55,Pressure Injury,Heel,2026-08-30,24.2,108,No,Yes,No,2,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100017,S1_Patient_017,75,Pressure Injury,Heel,2026-09-06,22.6,174,No,No,No,1,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100017,S1_Patient_017,61,Pressure Injury,Right Leg,2026-09-13,20.9,237,No,No,No,1,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100017,S1_Patient_017,92,Pressure Injury,Right Leg,2026-09-20,19.2,295,No,Yes,No,2,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100017,S1_Patient_017,80,Pressure Injury,Heel,2026-09-27,17.6,300,No,Yes,No,2,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100017,S1_Patient_017,73,Pressure Injury,Right Leg,2026-10-04,16.0,481,No,Yes,No,2,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100018,S1_Patient_018,81,Pressure Injury,Right Foot,2026-08-16,27.1,420,No,No,No,2,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100018,S1_Patient_018,86,Pressure Injury,Right Foot,2026-08-23,25.5,306,No,Yes,No,1,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100018,S1_Patient_018,83,Pressure Injury,Left Foot,2026-08-30,23.8,193,No,Yes,No,1,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100018,S1_Patient_018,53,Pressure Injury,Sacrum,2026-09-06,22.2,351,No,Yes,No,1,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100018,S1_Patient_018,75,Pressure Injury,Heel,2026-09-13,20.6,497,No,Yes,No,1,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100018,S1_Patient_018,89,Pressure Injury,Left Foot,2026-09-20,19.0,127,No,Yes,No,2,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100018,S1_Patient_018,95,Pressure Injury,Right Leg,2026-09-27,17.3,199,No,Yes,No,2,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100018,S1_Patient_018,71,Pressure Injury,Left Leg,2026-10-04,15.7,157,No,No,No,1,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100019,S1_Patient_019,88,Pressure Injury,Right Foot,2026-08-16,18.6,190,No,No,No,3,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100019,S1_Patient_019,71,Pressure Injury,Left Foot,2026-08-23,19.7,490,No,No,No,3,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100019,S1_Patient_019,56,Pressure Injury,Sacrum,2026-08-30,20.8,320,No,No,No,3,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100019,S1_Patient_019,68,Pressure Injury,Left Foot,2026-09-06,21.9,377,No,Yes,No,3,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100019,S1_Patient_019,50,Pressure Injury,Right Leg,2026-09-13,23.1,336,No,No,No,4,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100019,S1_Patient_019,80,Pressure Injury,Left Foot,2026-09-20,24.2,131,No,Yes,No,4,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100019,S1_Patient_019,83,Pressure Injury,Left Foot,2026-09-27,25.3,203,Suspected,Yes,No,4,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100019,S1_Patient_019,50,Pressure Injury,Right Leg,2026-10-04,26.4,71,Suspected,No,No,4,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100020,S1_Patient_020,58,Venous Leg Ulcer,Sacrum,2026-08-16,15.0,191,No,No,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100020,S1_Patient_020,80,Venous Leg Ulcer,Sacrum,2026-08-23,15.9,41,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100020,S1_Patient_020,92,Venous Leg Ulcer,Heel,2026-08-30,16.8,53,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100020,S1_Patient_020,61,Venous Leg Ulcer,Sacrum,2026-09-06,17.7,92,No,No,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100020,S1_Patient_020,96,Venous Leg Ulcer,Sacrum,2026-09-13,18.6,136,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100020,S1_Patient_020,78,Venous Leg Ulcer,Sacrum,2026-09-20,19.5,345,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100020,S1_Patient_020,83,Venous Leg Ulcer,Right Foot,2026-09-27,20.4,334,Suspected,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100020,S1_Patient_020,52,Venous Leg Ulcer,Left Leg,2026-10-04,21.3,33,Suspected,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100021,S1_Patient_021,94,Diabetic Foot Ulcer,Right Foot,2026-08-16,12.5,209,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100021,S1_Patient_021,58,Diabetic Foot Ulcer,Right Leg,2026-08-23,11.8,209,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100021,S1_Patient_021,90,Diabetic Foot Ulcer,Left Leg,2026-08-30,11.0,98,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100021,S1_Patient_021,70,Diabetic Foot Ulcer,Right Foot,2026-09-06,10.2,425,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100021,S1_Patient_021,52,Diabetic Foot Ulcer,Right Leg,2026-09-13,9.5,241,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100021,S1_Patient_021,81,Diabetic Foot Ulcer,Right Foot,2026-09-20,8.8,381,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100021,S1_Patient_021,68,Diabetic Foot Ulcer,Sacrum,2026-09-27,8.0,54,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100021,S1_Patient_021,89,Diabetic Foot Ulcer,Left Foot,2026-10-04,7.3,128,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100022,S1_Patient_022,54,Venous Leg Ulcer,Right Foot,2026-08-16,6.3,148,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100022,S1_Patient_022,77,Venous Leg Ulcer,Left Leg,2026-08-23,6.4,311,No,No,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100022,S1_Patient_022,82,Venous Leg Ulcer,Left Leg,2026-08-30,6.3,307,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100022,S1_Patient_022,53,Venous Leg Ulcer,Right Leg,2026-09-06,6.4,343,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100022,S1_Patient_022,69,Venous Leg Ulcer,Left Leg,2026-09-13,6.3,148,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100022,S1_Patient_022,52,Venous Leg Ulcer,Left Leg,2026-09-20,6.4,235,No,No,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100022,S1_Patient_022,55,Venous Leg Ulcer,Sacrum,2026-09-27,6.1,82,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100022,S1_Patient_022,93,Venous Leg Ulcer,Left Foot,2026-10-04,6.0,409,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100023,S1_Patient_023,90,Diabetic Foot Ulcer,Right Foot,2026-08-16,6.1,461,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100023,S1_Patient_023,58,Diabetic Foot Ulcer,Sacrum,2026-08-23,6.5,59,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100023,S1_Patient_023,72,Diabetic Foot Ulcer,Sacrum,2026-08-30,6.8,82,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100023,S1_Patient_023,86,Diabetic Foot Ulcer,Right Leg,2026-09-06,7.2,190,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100023,S1_Patient_023,71,Diabetic Foot Ulcer,Left Foot,2026-09-13,7.6,344,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100023,S1_Patient_023,84,Diabetic Foot Ulcer,Sacrum,2026-09-20,7.9,116,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100023,S1_Patient_023,50,Diabetic Foot Ulcer,Left Leg,2026-09-27,8.3,432,Suspected,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100023,S1_Patient_023,59,Diabetic Foot Ulcer,Right Leg,2026-10-04,8.7,295,Suspected,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100024,S1_Patient_024,91,Diabetic Foot Ulcer,Heel,2026-08-16,12.2,204,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100024,S1_Patient_024,83,Diabetic Foot Ulcer,Sacrum,2026-08-23,11.5,63,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100024,S1_Patient_024,50,Diabetic Foot Ulcer,Sacrum,2026-08-30,10.7,396,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100024,S1_Patient_024,88,Diabetic Foot Ulcer,Right Foot,2026-09-06,10.0,419,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100024,S1_Patient_024,82,Diabetic Foot Ulcer,Left Foot,2026-09-13,9.3,459,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100024,S1_Patient_024,81,Diabetic Foot Ulcer,Right Foot,2026-09-20,8.5,336,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100024,S1_Patient_024,50,Diabetic Foot Ulcer,Heel,2026-09-27,7.8,295,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100024,S1_Patient_024,65,Diabetic Foot Ulcer,Sacrum,2026-10-04,7.1,251,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100025,S1_Patient_025,53,Pressure Injury,Sacrum,2026-08-16,25.8,81,No,Yes,No,1,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100025,S1_Patient_025,62,Pressure Injury,Sacrum,2026-08-23,25.9,387,No,No,No,2,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100025,S1_Patient_025,74,Pressure Injury,Left Foot,2026-08-30,26.1,64,No,Yes,No,1,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100025,S1_Patient_025,97,Pressure Injury,Right Leg,2026-09-06,25.2,411,No,Yes,No,2,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100025,S1_Patient_025,83,Pressure Injury,Right Leg,2026-09-13,25.9,112,No,Yes,No,2,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100025,S1_Patient_025,77,Pressure Injury,Left Foot,2026-09-20,25.9,324,No,No,No,2,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100025,S1_Patient_025,69,Pressure Injury,Left Leg,2026-09-27,25.8,211,No,Yes,No,1,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100025,S1_Patient_025,93,Pressure Injury,Left Leg,2026-10-04,26.8,304,No,Yes,No,1,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100026,S1_Patient_026,63,Diabetic Foot Ulcer,Left Foot,2026-08-16,15.1,358,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100026,S1_Patient_026,95,Diabetic Foot Ulcer,Sacrum,2026-08-23,16.9,280,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100026,S1_Patient_026,72,Diabetic Foot Ulcer,Left Foot,2026-08-30,18.7,30,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100026,S1_Patient_026,91,Diabetic Foot Ulcer,Right Leg,2026-09-06,20.5,344,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100026,S1_Patient_026,86,Diabetic Foot Ulcer,Right Foot,2026-09-13,22.3,67,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100026,S1_Patient_026,97,Diabetic Foot Ulcer,Left Foot,2026-09-20,24.2,310,Yes,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100026,S1_Patient_026,50,Diabetic Foot Ulcer,Left Leg,2026-09-27,26.0,334,Yes,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100026,S1_Patient_026,71,Diabetic Foot Ulcer,Right Leg,2026-10-04,27.8,368,Yes,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100027,S1_Patient_027,59,Venous Leg Ulcer,Right Leg,2026-08-16,14.7,424,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100027,S1_Patient_027,89,Venous Leg Ulcer,Heel,2026-08-23,13.8,142,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100027,S1_Patient_027,54,Venous Leg Ulcer,Right Leg,2026-08-30,12.9,245,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100027,S1_Patient_027,75,Venous Leg Ulcer,Heel,2026-09-06,12.1,478,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100027,S1_Patient_027,90,Venous Leg Ulcer,Left Leg,2026-09-13,11.2,120,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100027,S1_Patient_027,75,Venous Leg Ulcer,Left Leg,2026-09-20,10.3,111,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100027,S1_Patient_027,71,Venous Leg Ulcer,Sacrum,2026-09-27,9.4,262,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100027,S1_Patient_027,71,Venous Leg Ulcer,Heel,2026-10-04,8.5,244,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100028,S1_Patient_028,68,Arterial Ulcer,Sacrum,2026-08-16,21.7,434,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100028,S1_Patient_028,81,Arterial Ulcer,Left Foot,2026-08-23,20.4,161,No,No,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100028,S1_Patient_028,66,Arterial Ulcer,Right Leg,2026-08-30,19.1,89,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100028,S1_Patient_028,89,Arterial Ulcer,Right Foot,2026-09-06,17.8,100,No,No,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100028,S1_Patient_028,54,Arterial Ulcer,Left Leg,2026-09-13,16.5,59,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100028,S1_Patient_028,93,Arterial Ulcer,Left Foot,2026-09-20,15.2,403,No,No,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100028,S1_Patient_028,79,Arterial Ulcer,Heel,2026-09-27,13.9,285,No,No,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100028,S1_Patient_028,96,Arterial Ulcer,Right Foot,2026-10-04,12.6,246,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100029,S1_Patient_029,90,Venous Leg Ulcer,Left Leg,2026-08-16,22.6,98,No,No,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100029,S1_Patient_029,67,Venous Leg Ulcer,Sacrum,2026-08-23,25.3,81,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100029,S1_Patient_029,50,Venous Leg Ulcer,Right Foot,2026-08-30,28.0,154,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100029,S1_Patient_029,57,Venous Leg Ulcer,Left Leg,2026-09-06,30.7,432,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100029,S1_Patient_029,66,Venous Leg Ulcer,Left Foot,2026-09-13,33.4,390,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100029,S1_Patient_029,93,Venous Leg Ulcer,Right Foot,2026-09-20,36.2,144,Yes,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100029,S1_Patient_029,55,Venous Leg Ulcer,Left Foot,2026-09-27,38.9,132,Yes,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100029,S1_Patient_029,97,Venous Leg Ulcer,Heel,2026-10-04,41.6,53,Yes,No,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100030,S1_Patient_030,65,Arterial Ulcer,Right Foot,2026-08-16,7.5,436,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100030,S1_Patient_030,56,Arterial Ulcer,Left Leg,2026-08-23,7.0,92,No,No,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100030,S1_Patient_030,97,Arterial Ulcer,Right Leg,2026-08-30,6.6,97,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100030,S1_Patient_030,62,Arterial Ulcer,Left Foot,2026-09-06,6.2,125,No,No,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100030,S1_Patient_030,77,Arterial Ulcer,Sacrum,2026-09-13,5.7,454,No,No,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100030,S1_Patient_030,59,Arterial Ulcer,Left Foot,2026-09-20,5.2,395,No,No,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100030,S1_Patient_030,90,Arterial Ulcer,Right Leg,2026-09-27,4.8,131,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100030,S1_Patient_030,68,Arterial Ulcer,Right Leg,2026-10-04,4.4,446,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100031,S1_Patient_031,56,Venous Leg Ulcer,Left Foot,2026-08-16,8.4,116,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100031,S1_Patient_031,71,Venous Leg Ulcer,Right Foot,2026-08-23,9.0,339,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100031,S1_Patient_031,88,Venous Leg Ulcer,Heel,2026-08-30,8.6,236,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100031,S1_Patient_031,93,Venous Leg Ulcer,Right Leg,2026-09-06,9.0,161,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100031,S1_Patient_031,50,Venous Leg Ulcer,Right Foot,2026-09-13,8.7,377,No,No,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100031,S1_Patient_031,81,Venous Leg Ulcer,Left Foot,2026-09-20,8.9,427,No,No,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100031,S1_Patient_031,54,Venous Leg Ulcer,Sacrum,2026-09-27,9.0,98,No,No,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100031,S1_Patient_031,56,Venous Leg Ulcer,Right Leg,2026-10-04,8.6,119,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100032,S1_Patient_032,67,Arterial Ulcer,Heel,2026-08-16,12.4,220,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100032,S1_Patient_032,92,Arterial Ulcer,Left Leg,2026-08-23,11.7,357,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100032,S1_Patient_032,88,Arterial Ulcer,Left Leg,2026-08-30,10.9,109,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100032,S1_Patient_032,74,Arterial Ulcer,Right Leg,2026-09-06,10.2,232,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100032,S1_Patient_032,55,Arterial Ulcer,Left Leg,2026-09-13,9.4,427,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100032,S1_Patient_032,69,Arterial Ulcer,Left Foot,2026-09-20,8.7,473,No,No,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100032,S1_Patient_032,80,Arterial Ulcer,Right Foot,2026-09-27,7.9,354,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100032,S1_Patient_032,71,Arterial Ulcer,Right Foot,2026-10-04,7.2,204,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100033,S1_Patient_033,92,Pressure Injury,Left Foot,2026-08-16,20.2,270,No,No,No,4,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100033,S1_Patient_033,91,Pressure Injury,Heel,2026-08-23,22.6,50,No,Yes,No,3,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100033,S1_Patient_033,74,Pressure Injury,Right Leg,2026-08-30,25.0,141,No,No,No,3,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100033,S1_Patient_033,74,Pressure Injury,Right Foot,2026-09-06,27.5,392,No,No,No,4,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100033,S1_Patient_033,57,Pressure Injury,Right Leg,2026-09-13,29.9,58,No,No,No,4,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100033,S1_Patient_033,79,Pressure Injury,Heel,2026-09-20,32.3,183,Yes,Yes,No,3,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100033,S1_Patient_033,83,Pressure Injury,Right Foot,2026-09-27,34.7,397,Yes,No,No,4,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100033,S1_Patient_033,60,Pressure Injury,Heel,2026-10-04,37.2,398,Yes,Yes,No,3,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100034,S1_Patient_034,75,Diabetic Foot Ulcer,Sacrum,2026-08-16,29.9,39,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100034,S1_Patient_034,50,Diabetic Foot Ulcer,Right Leg,2026-08-23,28.1,46,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100034,S1_Patient_034,82,Diabetic Foot Ulcer,Sacrum,2026-08-30,26.3,321,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100034,S1_Patient_034,86,Diabetic Foot Ulcer,Right Leg,2026-09-06,24.5,387,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100034,S1_Patient_034,72,Diabetic Foot Ulcer,Heel,2026-09-13,22.7,155,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100034,S1_Patient_034,83,Diabetic Foot Ulcer,Heel,2026-09-20,20.9,303,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100034,S1_Patient_034,83,Diabetic Foot Ulcer,Right Foot,2026-09-27,19.1,489,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100034,S1_Patient_034,76,Diabetic Foot Ulcer,Right Leg,2026-10-04,17.3,366,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100035,S1_Patient_035,81,Arterial Ulcer,Right Leg,2026-08-16,15.3,62,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100035,S1_Patient_035,78,Arterial Ulcer,Left Leg,2026-08-23,14.5,271,No,No,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100035,S1_Patient_035,50,Arterial Ulcer,Heel,2026-08-30,14.8,37,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100035,S1_Patient_035,73,Arterial Ulcer,Right Foot,2026-09-06,14.9,58,No,No,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100035,S1_Patient_035,69,Arterial Ulcer,Left Leg,2026-09-13,14.9,254,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100035,S1_Patient_035,68,Arterial Ulcer,Sacrum,2026-09-20,15.2,122,No,No,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100035,S1_Patient_035,65,Arterial Ulcer,Left Leg,2026-09-27,15.0,278,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100035,S1_Patient_035,79,Arterial Ulcer,Left Foot,2026-10-04,15.1,267,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100036,S1_Patient_036,53,Arterial Ulcer,Right Leg,2026-08-16,29.7,72,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100036,S1_Patient_036,95,Arterial Ulcer,Right Leg,2026-08-23,27.9,387,No,No,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100036,S1_Patient_036,72,Arterial Ulcer,Sacrum,2026-08-30,26.1,42,No,No,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100036,S1_Patient_036,83,Arterial Ulcer,Right Foot,2026-09-06,24.4,466,No,No,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100036,S1_Patient_036,51,Arterial Ulcer,Left Leg,2026-09-13,22.6,179,No,No,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100036,S1_Patient_036,61,Arterial Ulcer,Right Foot,2026-09-20,20.8,103,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100036,S1_Patient_036,78,Arterial Ulcer,Heel,2026-09-27,19.0,126,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100036,S1_Patient_036,78,Arterial Ulcer,Right Foot,2026-10-04,17.2,455,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100037,S1_Patient_037,85,Venous Leg Ulcer,Right Leg,2026-08-16,28.0,109,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100037,S1_Patient_037,64,Venous Leg Ulcer,Right Leg,2026-08-23,26.3,165,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100037,S1_Patient_037,56,Venous Leg Ulcer,Left Foot,2026-08-30,24.6,35,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100037,S1_Patient_037,52,Venous Leg Ulcer,Left Leg,2026-09-06,23.0,214,No,No,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100037,S1_Patient_037,92,Venous Leg Ulcer,Left Leg,2026-09-13,21.3,239,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100037,S1_Patient_037,63,Venous Leg Ulcer,Right Foot,2026-09-20,19.6,211,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100037,S1_Patient_037,67,Venous Leg Ulcer,Left Foot,2026-09-27,17.9,479,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100037,S1_Patient_037,53,Venous Leg Ulcer,Right Foot,2026-10-04,16.2,225,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100038,S1_Patient_038,74,Arterial Ulcer,Heel,2026-08-16,9.4,179,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100038,S1_Patient_038,92,Arterial Ulcer,Heel,2026-08-23,10.5,404,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100038,S1_Patient_038,66,Arterial Ulcer,Right Foot,2026-08-30,11.7,267,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100038,S1_Patient_038,50,Arterial Ulcer,Left Foot,2026-09-06,12.8,493,No,No,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100038,S1_Patient_038,83,Arterial Ulcer,Left Leg,2026-09-13,13.9,381,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100038,S1_Patient_038,52,Arterial Ulcer,Heel,2026-09-20,15.0,438,Yes,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100038,S1_Patient_038,58,Arterial Ulcer,Sacrum,2026-09-27,16.2,37,Yes,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100038,S1_Patient_038,55,Arterial Ulcer,Right Leg,2026-10-04,17.3,41,Yes,No,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100039,S1_Patient_039,73,Venous Leg Ulcer,Left Leg,2026-08-16,14.3,316,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100039,S1_Patient_039,85,Venous Leg Ulcer,Left Leg,2026-08-23,16.0,300,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100039,S1_Patient_039,70,Venous Leg Ulcer,Left Leg,2026-08-30,17.7,348,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100039,S1_Patient_039,96,Venous Leg Ulcer,Heel,2026-09-06,19.4,231,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100039,S1_Patient_039,56,Venous Leg Ulcer,Left Foot,2026-09-13,21.2,31,No,No,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100039,S1_Patient_039,69,Venous Leg Ulcer,Sacrum,2026-09-20,22.9,433,Yes,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100039,S1_Patient_039,92,Venous Leg Ulcer,Heel,2026-09-27,24.6,107,Yes,No,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100039,S1_Patient_039,66,Venous Leg Ulcer,Sacrum,2026-10-04,26.3,43,Yes,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100040,S1_Patient_040,80,Diabetic Foot Ulcer,Right Foot,2026-08-16,16.6,87,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100040,S1_Patient_040,53,Diabetic Foot Ulcer,Right Foot,2026-08-23,15.6,162,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100040,S1_Patient_040,68,Diabetic Foot Ulcer,Left Foot,2026-08-30,14.6,259,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100040,S1_Patient_040,81,Diabetic Foot Ulcer,Left Foot,2026-09-06,13.6,332,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100040,S1_Patient_040,74,Diabetic Foot Ulcer,Right Leg,2026-09-13,12.6,430,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100040,S1_Patient_040,77,Diabetic Foot Ulcer,Left Leg,2026-09-20,11.6,370,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100040,S1_Patient_040,90,Diabetic Foot Ulcer,Right Leg,2026-09-27,10.6,248,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100040,S1_Patient_040,88,Diabetic Foot Ulcer,Right Leg,2026-10-04,9.6,440,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100041,S1_Patient_041,93,Arterial Ulcer,Left Leg,2026-08-16,26.3,232,No,No,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100041,S1_Patient_041,72,Arterial Ulcer,Left Foot,2026-08-23,24.7,152,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100041,S1_Patient_041,97,Arterial Ulcer,Left Leg,2026-08-30,23.1,311,No,No,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100041,S1_Patient_041,95,Arterial Ulcer,Right Leg,2026-09-06,21.6,236,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100041,S1_Patient_041,80,Arterial Ulcer,Right Leg,2026-09-13,20.0,79,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100041,S1_Patient_041,62,Arterial Ulcer,Left Foot,2026-09-20,18.4,195,No,No,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100041,S1_Patient_041,75,Arterial Ulcer,Right Foot,2026-09-27,16.8,193,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100041,S1_Patient_041,68,Arterial Ulcer,Right Leg,2026-10-04,15.3,260,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100042,S1_Patient_042,93,Diabetic Foot Ulcer,Left Leg,2026-08-16,19.0,453,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100042,S1_Patient_042,58,Diabetic Foot Ulcer,Heel,2026-08-23,20.1,331,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100042,S1_Patient_042,74,Diabetic Foot Ulcer,Left Foot,2026-08-30,21.3,98,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100042,S1_Patient_042,84,Diabetic Foot Ulcer,Right Foot,2026-09-06,22.4,425,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100042,S1_Patient_042,82,Diabetic Foot Ulcer,Left Foot,2026-09-13,23.6,330,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100042,S1_Patient_042,50,Diabetic Foot Ulcer,Right Leg,2026-09-20,24.7,40,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100042,S1_Patient_042,89,Diabetic Foot Ulcer,Left Foot,2026-09-27,25.8,142,Suspected,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home A,9470100042,S1_Patient_042,86,Diabetic Foot Ulcer,Heel,2026-10-04,27.0,316,Suspected,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100043,S1_Patient_043,58,Diabetic Foot Ulcer,Heel,2026-08-16,27.3,149,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100043,S1_Patient_043,93,Diabetic Foot Ulcer,Sacrum,2026-08-23,28.9,279,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100043,S1_Patient_043,71,Diabetic Foot Ulcer,Left Leg,2026-08-30,30.6,484,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100043,S1_Patient_043,77,Diabetic Foot Ulcer,Heel,2026-09-06,32.2,345,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100043,S1_Patient_043,54,Diabetic Foot Ulcer,Left Leg,2026-09-13,33.9,100,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100043,S1_Patient_043,62,Diabetic Foot Ulcer,Sacrum,2026-09-20,35.5,166,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100043,S1_Patient_043,57,Diabetic Foot Ulcer,Sacrum,2026-09-27,37.1,275,Suspected,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100043,S1_Patient_043,83,Diabetic Foot Ulcer,Sacrum,2026-10-04,38.8,365,Suspected,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100044,S1_Patient_044,57,Arterial Ulcer,Left Leg,2026-08-16,10.5,178,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100044,S1_Patient_044,95,Arterial Ulcer,Right Leg,2026-08-23,10.9,389,No,No,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100044,S1_Patient_044,70,Arterial Ulcer,Right Foot,2026-08-30,11.1,486,No,No,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100044,S1_Patient_044,95,Arterial Ulcer,Sacrum,2026-09-06,10.5,55,No,No,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100044,S1_Patient_044,79,Arterial Ulcer,Left Foot,2026-09-13,11.0,298,No,No,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100044,S1_Patient_044,90,Arterial Ulcer,Left Leg,2026-09-20,10.7,244,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100044,S1_Patient_044,90,Arterial Ulcer,Left Leg,2026-09-27,11.0,40,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100044,S1_Patient_044,63,Arterial Ulcer,Heel,2026-10-04,10.6,449,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100045,S1_Patient_045,71,Diabetic Foot Ulcer,Right Foot,2026-08-16,11.0,385,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100045,S1_Patient_045,87,Diabetic Foot Ulcer,Right Foot,2026-08-23,11.5,52,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100045,S1_Patient_045,80,Diabetic Foot Ulcer,Left Leg,2026-08-30,10.8,389,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100045,S1_Patient_045,65,Diabetic Foot Ulcer,Left Foot,2026-09-06,11.2,339,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100045,S1_Patient_045,91,Diabetic Foot Ulcer,Left Foot,2026-09-13,10.8,487,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100045,S1_Patient_045,88,Diabetic Foot Ulcer,Left Foot,2026-09-20,10.9,280,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100045,S1_Patient_045,65,Diabetic Foot Ulcer,Heel,2026-09-27,11.3,81,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Care Home B,9470100045,S1_Patient_045,57,Diabetic Foot Ulcer,Left Leg,2026-10-04,11.5,88,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100046,S1_Patient_046,64,Pressure Injury,Right Leg,2026-08-16,9.6,363,No,No,No,4,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100046,S1_Patient_046,96,Pressure Injury,Right Leg,2026-08-23,10.8,75,No,Yes,No,4,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100046,S1_Patient_046,95,Pressure Injury,Sacrum,2026-08-30,11.9,250,No,No,No,4,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100046,S1_Patient_046,66,Pressure Injury,Left Leg,2026-09-06,13.1,497,No,No,No,3,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100046,S1_Patient_046,57,Pressure Injury,Heel,2026-09-13,14.2,54,No,No,No,3,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100046,S1_Patient_046,56,Pressure Injury,Right Leg,2026-09-20,15.4,200,Yes,Yes,No,3,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100046,S1_Patient_046,74,Pressure Injury,Heel,2026-09-27,16.5,139,Yes,No,No,3,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100046,S1_Patient_046,50,Pressure Injury,Sacrum,2026-10-04,17.7,246,Yes,No,No,3,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100047,S1_Patient_047,79,Arterial Ulcer,Sacrum,2026-08-16,24.5,111,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100047,S1_Patient_047,69,Arterial Ulcer,Right Foot,2026-08-23,27.4,247,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100047,S1_Patient_047,74,Arterial Ulcer,Sacrum,2026-08-30,30.4,57,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100047,S1_Patient_047,95,Arterial Ulcer,Heel,2026-09-06,33.3,79,No,No,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100047,S1_Patient_047,53,Arterial Ulcer,Left Leg,2026-09-13,36.3,243,No,No,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100047,S1_Patient_047,68,Arterial Ulcer,Heel,2026-09-20,39.2,168,Yes,No,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100047,S1_Patient_047,59,Arterial Ulcer,Left Foot,2026-09-27,42.1,279,Yes,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN East,9470100047,S1_Patient_047,82,Arterial Ulcer,Sacrum,2026-10-04,45.1,454,Yes,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100048,S1_Patient_048,55,Arterial Ulcer,Left Foot,2026-08-16,13.9,182,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100048,S1_Patient_048,75,Arterial Ulcer,Right Leg,2026-08-23,13.6,74,No,No,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100048,S1_Patient_048,82,Arterial Ulcer,Right Foot,2026-08-30,13.7,196,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100048,S1_Patient_048,78,Arterial Ulcer,Sacrum,2026-09-06,13.6,122,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100048,S1_Patient_048,94,Arterial Ulcer,Left Leg,2026-09-13,14.2,104,No,No,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100048,S1_Patient_048,58,Arterial Ulcer,Right Foot,2026-09-20,13.6,238,No,No,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100048,S1_Patient_048,81,Arterial Ulcer,Right Leg,2026-09-27,14.3,54,No,Yes,Yes,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team South,9470100048,S1_Patient_048,73,Arterial Ulcer,Left Foot,2026-10-04,13.7,300,No,Yes,Yes,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100049,S1_Patient_049,90,Venous Leg Ulcer,Right Leg,2026-08-16,26.1,36,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100049,S1_Patient_049,88,Venous Leg Ulcer,Left Foot,2026-08-23,24.5,260,No,No,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100049,S1_Patient_049,63,Venous Leg Ulcer,Left Leg,2026-08-30,23.0,382,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100049,S1_Patient_049,66,Venous Leg Ulcer,Sacrum,2026-09-06,21.4,163,No,No,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100049,S1_Patient_049,83,Venous Leg Ulcer,Right Leg,2026-09-13,19.8,462,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100049,S1_Patient_049,94,Venous Leg Ulcer,Right Leg,2026-09-20,18.3,250,No,No,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100049,S1_Patient_049,63,Venous Leg Ulcer,Left Leg,2026-09-27,16.7,400,No,Yes,No,,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Community Team North,9470100049,S1_Patient_049,97,Venous Leg Ulcer,Heel,2026-10-04,15.1,295,No,Yes,No,,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100050,S1_Patient_050,68,Pressure Injury,Left Leg,2026-08-16,29.0,294,No,Yes,No,3,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100050,S1_Patient_050,83,Pressure Injury,Left Leg,2026-08-23,32.5,33,No,Yes,No,3,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100050,S1_Patient_050,93,Pressure Injury,Left Foot,2026-08-30,36.0,376,No,No,No,4,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100050,S1_Patient_050,76,Pressure Injury,Heel,2026-09-06,39.4,137,No,Yes,No,4,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100050,S1_Patient_050,64,Pressure Injury,Left Leg,2026-09-13,42.9,51,No,Yes,No,3,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100050,S1_Patient_050,51,Pressure Injury,Right Foot,2026-09-20,46.4,356,Yes,Yes,No,3,Yes
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100050,S1_Patient_050,85,Pressure Injury,Right Foot,2026-09-27,49.9,32,Yes,Yes,No,3,No
+SystmOne,Hull & East Yorkshire Community NHS Trust,Hull DN West,9470100050,S1_Patient_050,50,Pressure Injury,Right Foot,2026-10-04,53.4,338,Yes,Yes,No,3,Yes

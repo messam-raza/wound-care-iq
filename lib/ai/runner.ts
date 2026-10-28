@@ -71,7 +71,7 @@ export async function runReviews(items: RunItem[], opts: RunOptions): Promise<Ru
           consecutiveFailures = 0; // the service works; the output failed validation
         } else {
           stats.unavailable++;
-          consecutiveFailures++;
+          if (rec.errorKind !== 'rate_limit') consecutiveFailures++; // still throttled after waiting: keep going
           if (rec.errorKind === 'auth') halt('The API key was rejected. Check the key in Settings.');
           else if (rec.errorKind === 'no_key') halt('No API key has been entered.');
           else if (consecutiveFailures >= maxFailures) halt(`Stopped after ${maxFailures} consecutive failures. The AI service may be unavailable.`);

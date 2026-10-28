@@ -32,11 +32,23 @@ function withTimeout(external?: AbortSignal): { signal: AbortSignal; cancel: () 
   };
 }
 
-function statusToError(status: number, retryAfter: string | null): AIError {
+// The service's own explanation (for example "request too large" or "model does not support this parameter"),
+// shortened and scrubbed, so a rejected request can be diagnosed instead of showing a bare status code.
+async function errorDetail(res: Response): Promise<string> {
+  try {
+    const body = (await res.json()) as { error?: { message?: string } };
+    const m = body?.error?.message;
+    return m ? redactSecrets(m.replace(/\s+/g, ' ').slice(0, 200)) : '';
+  } catch {
+    return '';
+  }
+}
+
+function statusToError(status: number, retryAfter: string | null, detail = ''): AIError {
   if (status === 401 || status === 403) return new AIError('auth', 'The API key was rejected. Check the key in Settings.');
   if (status === 429) return new AIError('rate_limit', 'The AI service is rate limiting requests.', parseRetryAfter(retryAfter));
   if (status >= 500) return new AIError('server', `The AI service returned an error (${status}).`, parseRetryAfter(retryAfter));
-  return new AIError('bad_request', `The AI service rejected the request (${status}).`);
+  return new AIError('bad_request', `The AI service rejected the request (${status}).${detail ? ` ${detail}` : ''}`);
 }
 
 export class GroqProvider implements LLMProvider {
@@ -68,6 +80,9 @@ export class GroqProvider implements LLMProvider {
           top_p: AI_CONFIG.topP,
           seed: AI_CONFIG.seed,
           max_tokens: AI_CONFIG.maxTokens,
+          // gpt-oss models spend output tokens on hidden reasoning. Keeping it low leaves room for the JSON
+          // and keeps each request inside small per-minute token limits.
+          ...(AI_CONFIG.model.startsWith('openai/gpt-oss') ? { reasoning_effort: 'low' } : {}),
           stream: false,
           response_format: { type: 'json_object' },
           messages: [
@@ -76,7 +91,7 @@ export class GroqProvider implements LLMProvider {
           ],
         }),
       });
-      if (!res.ok) throw statusToError(res.status, res.headers.get('retry-after'));
+      if (!res.ok) throw statusToError(res.status, res.headers.get('retry-after'), await errorDetail(res));
       const data = (await res.json()) as {
         id?: string;
         choices?: { message?: { content?: string }; finish_reason?: string }[];

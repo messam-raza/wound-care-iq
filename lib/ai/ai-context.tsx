@@ -2,8 +2,10 @@
 
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
 import { useCaseload } from '../caseload-context';
+import { useActivity } from '../activity-context';
 import { PRIORITY_RANK } from './action-library';
 import { AI_CONFIG, ENV_API_KEY } from './config';
+import { DemoProvider } from './demo-provider';
 import { GroqProvider } from './groq';
 import { AIError } from './provider';
 import { reviewPatient, type ReviewCache } from './review';
@@ -39,7 +41,8 @@ interface AIState {
   setApiKey: (key: string, remember: boolean) => { ok: true } | { ok: false; error: string };
   clearKey: () => void;
   verifyKey: () => Promise<{ ok: boolean; message: string }>;
-  ready: boolean; // consent given and a key present
+  ready: boolean; // always true: with no Groq key the built-in demo reviewer is used
+  usingDemo: boolean; // no Groq key set, so reviews come from the keyless demo reviewer
   running: boolean;
   stats: RunStats | null;
   runReview: (opts?: { force?: boolean }) => Promise<void>;
@@ -57,15 +60,28 @@ function describeError(e: unknown): string {
 
 export function AIProvider({ children }: { children: React.ReactNode }) {
   const { basePatients, putAIReview, clearAIReviews } = useCaseload();
+  const { log } = useActivity();
   const keyRef = useRef<string | null>(null);
   const abortRef = useRef<AbortController | null>(null);
+  const autoRunFor = useRef<unknown>(null);
   const [hasKey, setHasKey] = useState(false);
   const [rememberKey, setRememberKey] = useState(false);
   const [consent, setConsentState] = useState(true);
   const [running, setRunning] = useState(false);
   const [stats, setStats] = useState<RunStats | null>(null);
 
-  const provider = useMemo(() => new GroqProvider(() => keyRef.current), []);
+  // With a Groq key and consent, reviews go to Groq. Otherwise the keyless demo reviewer runs locally, so
+  // every patient always gets a review and no data leaves the browser.
+  const groq = useMemo(() => new GroqProvider(() => keyRef.current), []);
+  const demo = useMemo(() => new DemoProvider(), []);
+  const useGroq = consent && hasKey;
+  const provider = useGroq ? groq : demo;
+  // Cached reviews are keyed by input, not by provider, so switching provider must drop them.
+  useEffect(() => {
+    reviewCache.clear();
+    clearAIReviews();
+    autoRunFor.current = null;
+  }, [useGroq, clearAIReviews]);
 
   // Restore tab-scoped state. Nothing is restored from persistent storage.
   useEffect(() => {
@@ -125,18 +141,18 @@ export function AIProvider({ children }: { children: React.ReactNode }) {
 
   const verifyKey = useCallback(async () => {
     try {
-      await provider.verifyKey();
+      await groq.verifyKey();
       return { ok: true, message: 'The key is valid.' };
     } catch (e) {
       return { ok: false, message: describeError(e) };
     }
-  }, [provider]);
+  }, [groq]);
 
   const cancel = useCallback(() => abortRef.current?.abort(), []);
 
   const runReview = useCallback(
     async (opts?: { force?: boolean }) => {
-      if (running || !consent || !keyRef.current) return;
+      if (running) return;
       const items = basePatients
         .filter((p) => p.ruleResult)
         .sort((a, b) => PRIORITY_RANK[a.rulePriority] - PRIORITY_RANK[b.rulePriority] || b.riskScore - a.riskScore)
@@ -149,7 +165,7 @@ export function AIProvider({ children }: { children: React.ReactNode }) {
       setRunning(true);
       setStats(emptyStats(items.length));
       try {
-        await runReviews(items, {
+        const result = await runReviews(items, {
           provider,
           cache: reviewCache,
           signal: ctl.signal,
@@ -157,28 +173,27 @@ export function AIProvider({ children }: { children: React.ReactNode }) {
           onRecord: putAIReview,
           onProgress: setStats,
         });
+        log('ai', 'AI reviews generated', `${result.accepted} of ${result.total} patients reviewed${result.stoppedReason ? ` · ${result.stoppedReason}` : ''}`);
       } finally {
         setRunning(false);
         abortRef.current = null;
       }
     },
-    [running, consent, basePatients, provider, putAIReview],
+    [running, basePatients, provider, putAIReview, log],
   );
 
-  // Reviews start by themselves once consent and a key are in place and a caseload is loaded, so the AI
-  // wording is on screen without a button press. Runs once per loaded caseload (and once when AI becomes
-  // ready); cached results are not re-requested, and failures fall back to the rule-based text.
-  const autoRunFor = useRef<unknown>(null);
+  // Reviews start by themselves once a caseload is loaded (and again if the provider switches between the
+  // demo reviewer and Groq), so the AI wording is on screen without a button press. Cached results are not
+  // re-requested, and failures fall back to the rule-based text.
   useEffect(() => {
-    if (!consent || !hasKey || basePatients.length === 0 || running) return;
+    if (basePatients.length === 0 || running) return;
     if (autoRunFor.current === basePatients) return;
     autoRunFor.current = basePatients;
     void runReview();
-  }, [consent, hasKey, basePatients, running, runReview]);
+  }, [useGroq, basePatients, running, runReview]);
 
   const reviewOne = useCallback(
     async (patientId: string, force?: boolean) => {
-      if (!consent || !keyRef.current) return;
       const p = basePatients.find((x) => x.id === patientId);
       if (!p?.ruleResult) return;
       const ctl = new AbortController();
@@ -188,7 +203,7 @@ export function AIProvider({ children }: { children: React.ReactNode }) {
         // cancelled or unexpected: the rule-based explanation stays on screen
       }
     },
-    [consent, basePatients, provider, putAIReview],
+    [basePatients, provider, putAIReview],
   );
 
   const wipeSession = useCallback(() => {
@@ -201,8 +216,8 @@ export function AIProvider({ children }: { children: React.ReactNode }) {
   }, [clearKey, setConsent, clearAIReviews]);
 
   const value = useMemo<AIState>(
-    () => ({ consent, setConsent, hasKey, rememberKey, setApiKey, clearKey, verifyKey, ready: consent && hasKey, running, stats, runReview, reviewOne, cancel, wipeSession }),
-    [consent, setConsent, hasKey, rememberKey, setApiKey, clearKey, verifyKey, running, stats, runReview, reviewOne, cancel, wipeSession],
+    () => ({ consent, setConsent, hasKey, rememberKey, setApiKey, clearKey, verifyKey, ready: true, usingDemo: !useGroq, running, stats, runReview, reviewOne, cancel, wipeSession }),
+    [consent, setConsent, hasKey, rememberKey, setApiKey, clearKey, verifyKey, useGroq, running, stats, runReview, reviewOne, cancel, wipeSession],
   );
 
   return <AIContext.Provider value={value}>{children}</AIContext.Provider>;

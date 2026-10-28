@@ -6,6 +6,8 @@ import { Button } from '@/components/ui/button';
 import type { PilotPatient } from '@/lib/pilot-types';
 import { RISK_TONE } from '@/lib/selectors-groupa';
 import { PilotRiskBadge, PriorityBadge } from './pilot-patient-row';
+import { AIReviewPanel } from '@/components/ai-ui';
+import { useWorkspace } from '@/lib/workspace-context';
 import {
   ResponsiveContainer,
   XAxis,
@@ -22,6 +24,8 @@ import {
   Activity,
   Clock,
   AlertTriangle,
+  CheckCircle2,
+  RotateCcw,
 } from 'lucide-react';
 import { format, parseISO, isValid } from 'date-fns';
 
@@ -54,6 +58,8 @@ export function PatientDetail({ patient, onBack }: PatientDetailProps) {
   if (patient.diabetes) comorbidities.push('Diabetes');
   if (patient.pad) comorbidities.push('PAD');
   const reasoning = patient.clinicalReasoning;
+  const { isReviewed, reviewedDay, markReviewed, undoReviewed } = useWorkspace();
+  const reviewed = isReviewed(patient);
 
   return (
     <div className="space-y-6">
@@ -71,6 +77,17 @@ export function PatientDetail({ patient, onBack }: PatientDetailProps) {
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-2">
+            {reviewed ? (
+              <Button variant="outline" onClick={() => undoReviewed(patient)}>
+                <RotateCcw className="mr-2 h-4 w-4" />
+                Visited {reviewedDay(patient)} · Undo
+              </Button>
+            ) : (
+              <Button onClick={() => { markReviewed(patient); onBack(); }}>
+                <CheckCircle2 className="mr-2 h-4 w-4" />
+                Mark reviewed
+              </Button>
+            )}
             <PriorityBadge priority={patient.tvnPriority} />
             <PilotRiskBadge level={patient.riskLevel} />
             <Badge variant="outline" className="text-xs">
@@ -327,6 +344,8 @@ export function PatientDetail({ patient, onBack }: PatientDetailProps) {
       )}
 
       {/* Assessment Timeline */}
+      <AIReviewPanel patient={patient} />
+
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2 text-base">

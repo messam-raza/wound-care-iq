@@ -27,10 +27,14 @@ export const AI_CONFIG = {
   temperature: num(process.env.NEXT_PUBLIC_AI_TEMPERATURE, 0),
   topP: 1,
   seed: num(process.env.NEXT_PUBLIC_AI_SEED, 20261022),
-  maxTokens: num(process.env.NEXT_PUBLIC_AI_MAX_TOKENS, 3000),
+  maxTokens: num(process.env.NEXT_PUBLIC_AI_MAX_TOKENS, 1500),
 
   // Resilience. MAX_RETRIES = 3 means the first call plus up to three retries (four calls at most).
   maxRetries: num(process.env.NEXT_PUBLIC_AI_MAX_RETRIES, 3),
+  // Rate limits (HTTP 429) are waited out rather than counted as failures. Small plans allow only a few
+  // reviews a minute, so a full caseload takes a while but still completes.
+  maxRateLimitWaits: 12,
+  rateLimitWaitMs: 8000,
   baseBackoffMs: 1000,
   maxBackoffMs: 8000,
   timeoutMs: num(process.env.NEXT_PUBLIC_AI_TIMEOUT_MS, 30_000),

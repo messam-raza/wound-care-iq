@@ -61,6 +61,7 @@ export async function reviewPatient(patient: PilotPatient, rule: RuleSnapshot, d
   let violations: GuardrailViolation[] = [];
   let lastError: AIError | null = null;
   let attempts = 0;
+  let rateWaits = 0;
 
   for (let attempt = 0; attempt <= AI_CONFIG.maxRetries; attempt++) {
     if (deps.signal?.aborted) throw new AIError('aborted', 'The review was cancelled.');
@@ -109,6 +110,19 @@ export async function reviewPatient(patient: PilotPatient, rule: RuleSnapshot, d
       if (e.kind === 'aborted') throw e;
       lastError = e;
       if (!e.retryable) break; // auth, bad request, missing key: retrying cannot help
+      // A rate limit is a queue, not a failure: the request was refused before any work was done, so wait
+      // for the window to reset and try again without using up one of the attempts.
+      if (e.kind === 'rate_limit' && rateWaits < AI_CONFIG.maxRateLimitWaits) {
+        rateWaits++;
+        attempt--;
+        attempts--;
+        try {
+          await sleep(Math.max(e.retryAfterMs ?? 0, AI_CONFIG.rateLimitWaitMs), deps.signal);
+        } catch {
+          throw new AIError('aborted', 'The review was cancelled.');
+        }
+        continue;
+      }
       if (attempt < AI_CONFIG.maxRetries) {
         try {
           await sleep(backoffMs(attempt, e.retryAfterMs), deps.signal);

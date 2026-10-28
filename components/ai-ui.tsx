@@ -1,11 +1,10 @@
 'use client';
 
 import { useState } from 'react';
-import { Brain, Flag, Loader2, RefreshCw, Sparkles } from 'lucide-react';
+import { Brain, Flag, Loader2, RefreshCw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { AIRaisedChip, Chip, Notice, PriorityBadge, Section } from '@/components/pilot-ui';
 import { ACTION_BY_CODE, fromWirePriority } from '@/lib/ai/action-library';
-import { AI_CONFIG } from '@/lib/ai/config';
 import { useAI } from '@/lib/ai/ai-context';
 import type { AIReviewRecord } from '@/lib/ai/types';
 import { useCaseload } from '@/lib/caseload-context';
@@ -41,73 +40,6 @@ function Cites({ ids }: { ids: string[] }) {
   );
 }
 
-// ─── Run bar on the caseload page ────────────────────────────────────────────
-
-export function AIReviewBar() {
-  const { ready, running, stats, runReview, cancel } = useAI();
-  const { basePatients, aiMode } = useCaseload();
-  const pct = stats && stats.total > 0 ? Math.round((stats.done / stats.total) * 100) : 0;
-  const capped = basePatients.length > AI_CONFIG.maxPatientsPerRun;
-
-  return (
-    <section className="rounded-xl border border-border bg-card p-4 shadow-sm">
-      <div className="flex flex-wrap items-center justify-between gap-4">
-        <div className="flex min-w-0 items-start gap-3">
-          <Brain className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
-          <div className="min-w-0">
-            <p className="text-sm font-semibold text-foreground">AI clinical review</p>
-            <p className="mt-0.5 text-sm text-muted-foreground">
-              The rules set the minimum priority. The AI then writes every summary, reason and recommended action in plain English from those rules, and can raise a priority by one band with cited evidence. It can never lower one.
-              {' '}Mode: <span className="font-medium text-foreground">{aiMode === 'apply' ? 'escalations applied' : 'shadow (escalations recorded, not applied)'}</span>.
-            </p>
-          </div>
-        </div>
-        <div className="flex items-center gap-2">
-          {running ? (
-            <Button variant="outline" onClick={cancel}>Cancel</Button>
-          ) : (
-            <Button onClick={() => runReview()} disabled={!ready}>
-              <Sparkles className="mr-2 h-4 w-4" />
-              Run AI review
-            </Button>
-          )}
-        </div>
-      </div>
-
-      {!ready && (
-        <p className="mt-3 text-sm text-muted-foreground">
-          To use AI review, open Settings, tick the data-sharing consent and enter your Groq API key. The worklist works fully without it.
-        </p>
-      )}
-      {capped && ready && (
-        <p className="mt-3 text-sm text-muted-foreground">
-          A run reviews the {AI_CONFIG.maxPatientsPerRun} highest-priority patients of {basePatients.length}.
-        </p>
-      )}
-
-      {stats && (
-        <div className="mt-4 space-y-2">
-          <div className="h-2 overflow-hidden rounded-full bg-secondary">
-            <div className="h-full bg-primary transition-all" style={{ width: `${pct}%` }} />
-          </div>
-          <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-muted-foreground">
-            <span className="flex items-center gap-1.5">
-              {running && <Loader2 className="h-3.5 w-3.5 animate-spin" />}
-              {stats.done} of {stats.total} reviewed
-            </span>
-            <span><span className="font-medium text-foreground">{stats.accepted}</span> accepted</span>
-            <span><span className="font-medium text-primary">{stats.escalated}</span> AI-raised</span>
-            <span><span className="font-medium text-foreground">{stats.rejected}</span> rejected by guardrails</span>
-            <span><span className="font-medium text-foreground">{stats.unavailable}</span> unavailable</span>
-            {stats.cached > 0 && <span>{stats.cached} from cache</span>}
-          </div>
-          {stats.stoppedReason && <p className="text-sm text-warning">{stats.stoppedReason}</p>}
-        </div>
-      )}
-    </section>
-  );
-}
-
 // ─── Per-patient panel ───────────────────────────────────────────────────────
 
 export function AIReviewPanel({ patient }: { patient: PilotPatient }) {
@@ -139,7 +71,7 @@ export function AIReviewPanel({ patient }: { patient: PilotPatient }) {
       <div className="space-y-4 p-5">
         {!review && (
           <p className="text-sm text-muted-foreground">
-            {ready ? 'No AI review has been run for this patient yet.' : 'AI review is switched off. Enable it in Settings to use it. The rule-based explanation above is complete without it.'}
+            {busy ? 'Reviewing this patient…' : 'No AI review has been run for this patient yet.'}
           </p>
         )}
 

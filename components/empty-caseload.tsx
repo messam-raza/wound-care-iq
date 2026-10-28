@@ -3,7 +3,7 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { DatabaseZap } from 'lucide-react';
 
-// Shown by every data-driven module until a CSV has been uploaded in Pilot Workflow.
+// Shown by every data-driven module until a CSV has been uploaded in Upload & Map.
 export function EmptyCaseload({ title }: { title: string }) {
   return (
     <div className="space-y-6">
@@ -14,7 +14,7 @@ export function EmptyCaseload({ title }: { title: string }) {
           <p className="text-base font-semibold text-foreground">No caseload loaded</p>
           <p className="max-w-md text-sm text-muted-foreground">
             This view is calculated from your uploaded wound assessment data. Upload a CSV export in
-            Pilot Workflow and it will populate here.
+            Upload & Map and it will populate here.
           </p>
         </CardContent>
       </Card>

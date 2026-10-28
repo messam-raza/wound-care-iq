@@ -2,74 +2,50 @@
 
 import { cn } from '@/lib/utils';
 import {
-  LayoutDashboard, Brain, Activity, Calculator, FileText, TrendingUp,
-  HeartPulse, DatabaseZap, Timer, Stethoscope, ArrowUpCircle,
-  GraduationCap, Home, BarChart3, PoundSterling, Trophy, Heart,
-  Building2, Users, ClipboardList, Rocket, Settings,
+  LayoutDashboard, Calculator, FileText, TrendingUp, DatabaseZap, Rocket, Brain, Timer, Building2,
+  GraduationCap, BarChart3, PoundSterling, Trophy, Heart, HeartPulse,
 } from 'lucide-react';
+import { SHOW_BUSINESS_VIEWS } from '@/lib/feature-flags';
 
+// The six TVN tabs, then settings (opened from the user menu). The business ids are hidden unless
+// SHOW_BUSINESS_VIEWS is on (see lib/feature-flags.ts).
 export type TabId =
-  | 'dashboard' | 'command' | 'monitoring' | 'calculator' | 'report' | 'impact'
-  | 'hub' | 'daily' | 'tvn' | 'escalation' | 'workforce' | 'carehome'
-  | 'execcommand' | 'costintel' | 'benchmarking' | 'patientcare'
-  | 'priority' | 'trajectory' | 'nurse' | 'facilityintel'
-  | 'pilot' | 'settings';
+  | 'dashboard' | 'upload' | 'aireviews' | 'priority' | 'facilities' | 'reports' | 'settings'
+  | 'execdashboard' | 'hub' | 'execcommand' | 'costintel' | 'calculator' | 'report' | 'impact'
+  | 'benchmarking' | 'workforce' | 'patientcare';
 
-interface NavItem { id: TabId; label: string; icon: React.ReactNode; badge?: string }
+interface NavItem { id: TabId; label: string; icon: React.ReactNode }
 interface SidebarProps { activeTab: TabId; onTabChange: (tab: TabId) => void }
 
+export const CORE_NAV: NavItem[] = [
+  { id: 'dashboard', label: 'Dashboard', icon: <LayoutDashboard className="h-4 w-4" /> },
+  { id: 'upload', label: 'Upload & Map', icon: <Rocket className="h-4 w-4" /> },
+  { id: 'aireviews', label: 'AI Reviews', icon: <Brain className="h-4 w-4" /> },
+  { id: 'priority', label: 'Prioritisation', icon: <Timer className="h-4 w-4" /> },
+  { id: 'facilities', label: 'Facilities & Mapping', icon: <Building2 className="h-4 w-4" /> },
+  { id: 'reports', label: 'Reports & Export', icon: <FileText className="h-4 w-4" /> },
+];
+
+export const BUSINESS_NAV: NavItem[] = [
+  { id: 'hub', label: 'Data Intelligence Hub', icon: <DatabaseZap className="h-4 w-4" /> },
+  { id: 'benchmarking', label: 'Benchmarking', icon: <Trophy className="h-4 w-4" /> },
+  { id: 'workforce', label: 'Workforce Readiness', icon: <GraduationCap className="h-4 w-4" /> },
+  { id: 'patientcare', label: 'Patient-Centred Care', icon: <Heart className="h-4 w-4" /> },
+  { id: 'execdashboard', label: 'Executive Dashboard', icon: <LayoutDashboard className="h-4 w-4" /> },
+  { id: 'execcommand', label: 'Exec Command Center', icon: <BarChart3 className="h-4 w-4" /> },
+  { id: 'costintel', label: 'NHS Cost Intelligence', icon: <PoundSterling className="h-4 w-4" /> },
+  { id: 'calculator', label: 'Cost Savings Calculator', icon: <Calculator className="h-4 w-4" /> },
+  { id: 'report', label: 'Executive Report', icon: <FileText className="h-4 w-4" /> },
+  { id: 'impact', label: 'Impact & ROI', icon: <TrendingUp className="h-4 w-4" /> },
+];
+
 export function Sidebar({ activeTab, onTabChange }: SidebarProps) {
-  const coreItems: NavItem[] = [
-    { id: 'priority', label: 'Daily Priority List', icon: <Timer className="h-4 w-4" />, badge: 'CORE' },
-    { id: 'daily', label: 'Daily Command Center', icon: <ClipboardList className="h-4 w-4" /> },
-    { id: 'command', label: 'AI Command Center', icon: <Brain className="h-4 w-4" /> },
-    { id: 'tvn', label: 'TVN Command Center', icon: <Stethoscope className="h-4 w-4" /> },
-    { id: 'escalation', label: 'Escalation Engine', icon: <ArrowUpCircle className="h-4 w-4" /> },
-    { id: 'trajectory', label: 'Healing Trajectory', icon: <TrendingUp className="h-4 w-4" /> },
-    { id: 'monitoring', label: 'Wound Monitoring', icon: <Activity className="h-4 w-4" /> },
-  ];
-
-  const pilotItems: NavItem[] = [
-    { id: 'pilot', label: 'Pilot Workflow', icon: <Rocket className="h-4 w-4" />, badge: 'PILOT' },
-  ];
-
-  const clinicalItems: NavItem[] = [
-    { id: 'nurse', label: 'Community Nurse Dashboard', icon: <Users className="h-4 w-4" /> },
-    { id: 'carehome', label: 'Care Home Risk', icon: <Home className="h-4 w-4" /> },
-    { id: 'facilityintel', label: 'Facility Intelligence', icon: <Building2 className="h-4 w-4" /> },
-  ];
-
-  const intelligenceItems: NavItem[] = [
-    { id: 'hub', label: 'Data Intelligence Hub', icon: <DatabaseZap className="h-4 w-4" />, badge: 'NEW' },
-    { id: 'benchmarking', label: 'Benchmarking', icon: <Trophy className="h-4 w-4" /> },
-  ];
-
-  const operationalItems: NavItem[] = [
-    { id: 'workforce', label: 'Workforce Readiness', icon: <GraduationCap className="h-4 w-4" /> },
-    { id: 'patientcare', label: 'Patient-Centred Care', icon: <Heart className="h-4 w-4" /> },
-  ];
-
-  const executiveItems: NavItem[] = [
-    { id: 'dashboard', label: 'Executive Dashboard', icon: <LayoutDashboard className="h-4 w-4" /> },
-    { id: 'execcommand', label: 'Exec Command Center', icon: <BarChart3 className="h-4 w-4" /> },
-    { id: 'costintel', label: 'NHS Cost Intelligence', icon: <PoundSterling className="h-4 w-4" /> },
-    { id: 'calculator', label: 'Cost Savings Calculator', icon: <Calculator className="h-4 w-4" /> },
-    { id: 'report', label: 'Executive Report', icon: <FileText className="h-4 w-4" /> },
-    { id: 'impact', label: 'Impact & ROI', icon: <TrendingUp className="h-4 w-4" /> },
-  ];
-
   const renderItem = (item: NavItem) => (
     <button key={item.id} onClick={() => onTabChange(item.id)}
       className={cn('flex w-full items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-colors',
         activeTab === item.id ? 'bg-primary text-primary-foreground' : 'text-muted-foreground hover:bg-secondary hover:text-foreground')}>
       {item.icon}
       <span className="flex-1 text-left">{item.label}</span>
-      {item.badge && (
-        <span className={cn('rounded-full px-1.5 py-0.5 text-[11px] font-bold uppercase tracking-wider',
-          activeTab === item.id ? 'bg-primary-foreground/20 text-primary-foreground' : 'bg-accent/20 text-accent')}>
-          {item.badge}
-        </span>
-      )}
     </button>
   );
 
@@ -92,19 +68,13 @@ export function Sidebar({ activeTab, onTabChange }: SidebarProps) {
       </div>
       <nav className="flex-1 space-y-1 overflow-y-auto p-3 scrollbar-thin">
         {sectionLabel('Deterioration Detection')}
-        {coreItems.map(renderItem)}
-        {sectionLabel('Pilot Workflow')}
-        {pilotItems.map(renderItem)}
-        {sectionLabel('Clinical Tools')}
-        {clinicalItems.map(renderItem)}
-        {sectionLabel('Intelligence')}
-        {intelligenceItems.map(renderItem)}
-        {sectionLabel('Operations')}
-        {operationalItems.map(renderItem)}
-        {sectionLabel('Executive')}
-        {executiveItems.map(renderItem)}
-        {sectionLabel('Account')}
-        {renderItem({ id: 'settings', label: 'Settings', icon: <Settings className="h-4 w-4" /> })}
+        {CORE_NAV.map(renderItem)}
+        {SHOW_BUSINESS_VIEWS && (
+          <>
+            {sectionLabel('Business')}
+            {BUSINESS_NAV.map(renderItem)}
+          </>
+        )}
       </nav>
     </aside>
   );

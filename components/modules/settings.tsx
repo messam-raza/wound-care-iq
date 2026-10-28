@@ -14,7 +14,7 @@ import { Chip } from '@/components/pilot-ui';
 import { Brain } from 'lucide-react';
 
 function AISettings() {
-  const { consent, setConsent, hasKey, rememberKey, setApiKey, clearKey, verifyKey } = useAI();
+  const { consent, setConsent, hasKey, rememberKey, setApiKey, clearKey, verifyKey, usingDemo } = useAI();
   const { aiMode, setAIMode } = useCaseload();
   const [keyInput, setKeyInput] = useState('');
   const [remember, setRemember] = useState(false);
@@ -36,8 +36,8 @@ function AISettings() {
   };
 
   const locked: [string, string][] = [
-    ['Provider', 'Groq (OpenAI-compatible endpoint)'],
-    ['Model', AI_CONFIG.model],
+    ['Provider', usingDemo ? 'Built-in demo reviewer (runs in this browser, no external service)' : 'Groq (OpenAI-compatible endpoint)'],
+    ['Model', usingDemo ? 'wciq-demo-rules-1' : AI_CONFIG.model],
     ['Prompt version', AI_CONFIG.promptVersion],
     ['Temperature / top-p / seed', `${AI_CONFIG.temperature} / ${AI_CONFIG.topP} / ${AI_CONFIG.seed}`],
     ['Retries', `${AI_CONFIG.maxRetries} (up to ${AI_CONFIG.maxRetries + 1} calls per patient)`],
@@ -49,7 +49,7 @@ function AISettings() {
       <CardHeader>
         <CardTitle className="flex items-center gap-2 text-base"><Brain className="h-4 w-4 text-primary" />AI review</CardTitle>
         <CardDescription>
-          Optional. Rules set every priority; the AI can raise one by a single band with cited evidence and can never lower it.
+          No provider is connected yet, so a built-in demo reviewer writes the AI summaries locally. Add a Groq key below to use a hosted model instead. Rules set every priority; the AI can raise one by a single band with cited evidence and can never lower it.
         </CardDescription>
       </CardHeader>
       <CardContent className="space-y-5">
